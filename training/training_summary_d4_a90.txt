@@ -1,0 +1,32 @@
+RANDOM FOREST TRAINING SUMMARY
+Distance: 4, Angle: 90
+============================================================
+Dataset shape: (756, 6)
+Training samples: 604
+Test samples: 152
+Overall Accuracy: 0.8355
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           1       1.00      0.84      0.91        50
+           2       0.78      0.82      0.80        51
+           3       0.77      0.84      0.80        51
+
+    accuracy                           0.84       152
+   macro avg       0.85      0.84      0.84       152
+weighted avg       0.85      0.84      0.84       152
+
+
+Confusion Matrix:
+[[42  4  4]
+ [ 0 42  9]
+ [ 0  8 43]]
+
+Top Feature Importances:
+      feature  importance
+     contrast    0.248955
+dissimilarity    0.216473
+  correlation    0.210901
+  homogeneity    0.206919
+       energy    0.116752

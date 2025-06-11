@@ -1,0 +1,44 @@
+IMPROVED RANDOM FOREST TRAINING SUMMARY
+Distance: 4, Angle: 90
+============================================================
+Dataset shape: (756, 6)
+Training samples: 604
+Test samples: 152
+Best Model: Optimized Random Forest
+Best Accuracy: 0.8355
+
+All Model Results:
+Optimized Random Forest:
+  Test Accuracy: 0.8355
+  CV Mean: 0.7832
+  CV Std: 0.0353
+
+Ensemble Model:
+  Test Accuracy: 0.7961
+  CV Mean: 0.7733
+  CV Std: 0.0466
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           1       0.98      0.86      0.91        50
+           2       0.77      0.80      0.79        51
+           3       0.78      0.84      0.81        51
+
+    accuracy                           0.84       152
+   macro avg       0.84      0.84      0.84       152
+weighted avg       0.84      0.84      0.84       152
+
+
+Confusion Matrix:
+[[43  4  3]
+ [ 1 41  9]
+ [ 0  8 43]]
+
+Top Feature Importances:
+      feature  importance
+     contrast    0.241616
+  correlation    0.217036
+dissimilarity    0.216679
+  homogeneity    0.205726
+       energy    0.118944

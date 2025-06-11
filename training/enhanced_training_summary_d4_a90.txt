@@ -1,0 +1,43 @@
+ENHANCED RANDOM FOREST TRAINING SUMMARY
+Distance: 4, Angle: 90
+============================================================
+Original dataset shape: (756, 6)
+Processed dataset shape: (618, 5)
+Training samples: 494
+Test samples: 124
+Selected features: 5
+Random Forest Accuracy: 0.7500
+Gradient Boosting Accuracy: 0.7177
+Cross-validation Mean: 0.7228
+Cross-validation Std: 0.0385
+
+Best Hyperparameters:
+{'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 30, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 200, 'n_jobs': -1, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+
+Selected Features:
+['correlation', 'contrast', 'homogeneity', 'energy', 'dissimilarity']
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           1       0.91      0.71      0.80        28
+           2       0.72      0.75      0.73        51
+           3       0.71      0.78      0.74        45
+
+    accuracy                           0.75       124
+   macro avg       0.78      0.75      0.76       124
+weighted avg       0.76      0.75      0.75       124
+
+
+Confusion Matrix:
+[[20  6  2]
+ [ 1 38 12]
+ [ 1  9 35]]
+
+Top Feature Importances:
+      feature  importance
+     contrast    0.239939
+  correlation    0.223488
+  homogeneity    0.194550
+dissimilarity    0.188425
+       energy    0.153599
